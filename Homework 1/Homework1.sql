@@ -31,9 +31,9 @@ primary key (id),
 
 create table Grade (
 id int identity(1,1) not null,
-StudentID int identity(1,1) not null,  
-CourseID int identity(1,1) not null,
-TeacherID int identity(1,1) not null,
+StudentID int not null,  
+CourseID int not null,
+TeacherID int not null,
 Grade int not null,
 Comment nvarchar(max) null,
 CreatedDate date null,
