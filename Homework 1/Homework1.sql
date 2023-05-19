@@ -1,3 +1,21 @@
+create table Student (
+id int identity (1,1) not null,
+FirstName nvarchar(20) not null,
+LastName nvarchar(20) not null,
+DateofBirth date not null,
+EnrolledDate date null,
+Gender nchar(1) null,
+NationalIdNumber nvarchar(10) not null,
+StudentCardNumber nvarchar(10) not null,
+primary key (id),
+);
+
+create table Teacher (
+Id int identity(1,1) not null,
+FirstName nvarchar(20) not null,
+LastName nvarchar(20) not null,
+DateofBirth date not null,
+AcademicRank nvarchar(10) not null,
 HireDate date null,
 primary key (id),
 );
