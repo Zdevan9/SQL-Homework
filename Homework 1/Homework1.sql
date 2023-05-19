@@ -38,10 +38,6 @@ Grade int not null,
 Comment nvarchar(max) null,
 CreatedDate date null,
 primary key (id),
-	FOREIGN KEY (StudentID) REFERENCES Student(id),
-	FOREIGN KEY (CourseID) REFERENCES Course(Id),
-	FOREIGN KEY (TeacherID) REFERENCES Teacher(Id),
-
 );
 
 create table AchievementType (
@@ -59,6 +55,4 @@ AchievementTypeID int not null,
 AchievementPoints int not null,
 AchievementMaxPoints bigint not null,
 AchievementDate date not null,
-    FOREIGN KEY (GradeId) REFERENCES Grade(id),
-    FOREIGN KEY (AchievementTypeID) REFERENCES AchievementType(Id)
 );
